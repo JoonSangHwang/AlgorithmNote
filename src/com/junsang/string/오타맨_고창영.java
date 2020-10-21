@@ -14,7 +14,7 @@ public class 오타맨_고창영 {
                 String[] str = br.readLine().split(" ");
                 String[] strSplit = str[1].split("");
                 for(int j=0; j<str[1].length(); j++) {
-                    if (Integer.parseInt(str[0]) != (j+1) {
+                    if (Integer.parseInt(str[0]) != (j+1)) {
                         System.out.print(strSplit[j]);
                     }
                 }
