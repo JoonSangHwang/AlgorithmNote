@@ -1,0 +1,13 @@
+* int[] To String[]
+
+    String[] result = new String[numbers.length];
+    for(int i=0; i<numbers.length; i++) {
+        result[i] = String.valueOf(numbers[i]);
+    }
+
+
+* String[] To String
+
+    for (String str: result) {
+        answer += str;
+    }

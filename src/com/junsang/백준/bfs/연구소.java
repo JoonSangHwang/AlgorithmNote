@@ -1,4 +1,4 @@
-package com.junsang.bfs;
+package com.junsang.백준.bfs;
 
 import java.io.BufferedReader;
 import java.io.IOException;

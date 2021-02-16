@@ -1,4 +1,4 @@
-package com.junsang.string;
+package com.junsang.백준.string;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
