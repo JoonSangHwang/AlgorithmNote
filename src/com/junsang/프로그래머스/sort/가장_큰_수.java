@@ -35,6 +35,7 @@ public class 가장_큰_수 {
             }
         });
 
+        // 0 값의 중복 제거
         if ("0".equals(result[0])) {
             return "0";
         }
