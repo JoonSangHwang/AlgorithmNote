@@ -1,0 +1,5 @@
+- 오름차순
+Array.sort(N);
+
+- 내림차순
+Array.sort(N, Collections.reverseOrder());

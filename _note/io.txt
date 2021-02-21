@@ -1,1 +1,15 @@
 https://ryulth.com/devnote/2019/06/17/java-io-tips/
+
+- 첫 번쨰 줄에 2개를 입력 받는다. 그리고 N 개 만큼 또 입력을 받는다.
+    static StringTokenizer st = new StringTokenizer(br.readLine());
+
+    static int N = Integer.parseInt(st.nextToken());
+    static int M = Integer.parseInt(st.nextToken());
+
+    static String[] line = new String[N];
+    for (int i = 0; i<N; i++) {
+        line[i] = br.readLine();
+    }
+
+- String 을 입력 받아 String[] 으로 저장
+    static String[] N = br.readLine().split("");
