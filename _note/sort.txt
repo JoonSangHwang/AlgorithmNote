@@ -1,5 +1,10 @@
 - 오름차순
-Array.sort(N);
+    Array.sort(N);
 
 - 내림차순
-Array.sort(N, Collections.reverseOrder());
+    - String[] 타입
+        Array.sort(N, Collections.reverseOrder());
+    - int[] 타입
+        int[] sortNum = Arrays.stream(data).boxed().sorted(Collections.reverseOrder()).mapToInt(Integer::intValue).toArray();
+    - Integer 타입
+        Arrays.sort(data, Comparator.reverseOrder());
