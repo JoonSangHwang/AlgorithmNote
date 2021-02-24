@@ -1,5 +1,5 @@
 - 오름차순
-    Array.sort(N);
+    Arrays.sort(N);
 
 - 내림차순
     - String[] 타입
