@@ -9,10 +9,10 @@ import java.util.StringTokenizer;
 /**
  * @author     : junsang Hwang
  * @Date       : 2021.03.08
- * @DESC       : 알파벳_거리
- * @see        : https://www.acmicpc.net/problem/5218
+ * @DESC       : 농구 경기
+ * @see        : https://www.acmicpc.net/problem/1159
  */
-public class 알파벳_거리 {
+public class 농구_경기 {
 
     //===
     static BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
@@ -22,7 +22,8 @@ public class 알파벳_거리 {
     //===
 
     static int N = 0;
-    static String[][] arr;
+    static String[] nameList;
+    static int[] firstName = new int[26];
 
     public static void main(String[] args) throws Exception {
         input();
@@ -31,35 +32,27 @@ public class 알파벳_거리 {
     }
 
     public static void solution() throws Exception {
-
         for(int i=0; i<N; i++) {
-            int arrSize = arr[i][0].length();
-            result.append("Distances: ");
-            for(int j=0; j<arrSize; j++) {
-                int numA = arr[i][0].charAt(j);
-                int numB = arr[i][1].charAt(j);
+            int nameIndex = nameList[i].charAt(0);
+            firstName[nameIndex-97]++;
+        }
 
-                if (numB >= numA) {
-                    result.append(numB-numA + " ");
-                } else {
-                    result.append((numB+26)-numA + " ");
-                }
-
-                if (j+1 == arrSize) {
-                    result.append("\n");
-                }
+        for(int i=0; i<26; i++) {
+            if (firstName[i] >= 5) {
+                result.append((char) (i+97));
             }
         }
 
+        if (result.length() == 0) {
+            result.append("PREDAJA");
+        }
     }
 
     public static void input() throws Exception {
         N = Integer.parseInt(br.readLine());
-        arr = new String[N][2];
+        nameList = new String[N];
         for(int i=0; i<N; i++) {
-            st = new StringTokenizer(br.readLine());
-            arr[i][0] = st.nextToken();
-            arr[i][1] = st.nextToken();
+            nameList[i] = br.readLine();
         }
     }
 
