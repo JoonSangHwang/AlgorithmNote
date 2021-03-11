@@ -1,15 +1,35 @@
 https://ryulth.com/devnote/2019/06/17/java-io-tips/
 
 - 첫 번쨰 줄에 2개를 입력 받는다. 그리고 N 개 만큼 또 입력을 받는다.
-    static StringTokenizer st = new StringTokenizer(br.readLine());
+    st = new StringTokenizer(br.readLine());
 
-    static int N = Integer.parseInt(st.nextToken());
-    static int M = Integer.parseInt(st.nextToken());
+    N = Integer.parseInt(st.nextToken());
+    M = Integer.parseInt(st.nextToken());
 
-    static String[] line = new String[N];
+    line = new String[N];
     for (int i = 0; i<N; i++) {
         line[i] = br.readLine();
     }
+
+
+- 첫 번째 줄에 2개를 입력 받는다. 그리고 N 개 만큼 또 입력을 받는다. 대신 N 개는 낱개로 배열에 넣어보자.
+    st = new StringTokenizer(br.readLine());
+    N = Integer.parseInt(st.nextToken());
+    M = Integer.parseInt(st.nextToken());
+
+    arr = new int[N+M];
+    st = new StringTokenizer(br.readLine());
+    for(int i=0; i<N; i++) {
+        int num = Integer.parseInt(st.nextToken());
+        arr[i] = num;
+    }
+
+    st = new StringTokenizer(br.readLine());
+    for(int i=N; i<N+M; i++) {
+        int num = Integer.parseInt(st.nextToken());
+        arr[i] = num;
+    }
+
 
 - String 을 입력 받아 String[] 으로 저장
     static String[] N = br.readLine().split("");

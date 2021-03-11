@@ -1,0 +1,4 @@
+문제1) charAt()
+문제2) toCharArray()
+문제3) indexof(), substring()
+문제4) palindrome
