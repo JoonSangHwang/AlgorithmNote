@@ -32,31 +32,39 @@ public class 지영_공주님의_마법_거울 {
     }
 
     public static void solution() throws Exception {
-        if (mentalState == 1) {
-            for(int i=0; i<N; i++) {
-                for(int j=0; j<N; j++) {
-                    result.append(mirror[i][j]);
-                }
-                result.append("\n");
-            }
-        }
 
-        else if (mentalState == 2) {
-            for(int i=0; i<N; i++) {
-                for(int j=N-1; j>=0; j--) {
-                    result.append(mirror[i][j]);
-                }
-                result.append("\n");
-            }
-        }
+        // 심리 상태
+        switch (mentalState) {
 
-        else if (mentalState == 3) {
-            for(int i=N-1; i>=0; i--) {
-                for(int j=0; j<N; j++) {
-                    result.append(mirror[i][j]);
+            // 원본
+            case 1:
+                for(int i=0; i<N; i++) {
+                    for(int j=0; j<N; j++) {
+                        result.append(mirror[i][j]);
+                    }
+                    result.append("\n");
                 }
-                result.append("\n");
-            }
+                break;
+
+            // 좌우 반전
+            case 2:
+                for(int i=0; i<N; i++) {
+                    for(int j=N-1; j>=0; j--) {
+                        result.append(mirror[i][j]);
+                    }
+                    result.append("\n");
+                }
+                break;
+
+            // 상하 반전
+            case 3:
+                for(int i=N-1; i>=0; i--) {
+                    for(int j=0; j<N; j++) {
+                        result.append(mirror[i][j]);
+                    }
+                    result.append("\n");
+                }
+                break;
         }
     }
 
