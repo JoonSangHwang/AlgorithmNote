@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Arrays;
-import java.util.StringTokenizer;
 
 /**
  * @author     : junsang Hwang
@@ -19,7 +18,6 @@ public class 데이트 {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static StringBuilder result = new StringBuilder();
-    static StringTokenizer st;
     //===
 
     static int N;
