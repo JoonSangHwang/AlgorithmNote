@@ -1,4 +1,4 @@
-package com.junsang.easy;
+package com.junsang.백준.자료구조_스택;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
