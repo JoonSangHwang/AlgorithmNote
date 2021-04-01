@@ -2,7 +2,10 @@
     // Pair
     static List<AbstractMap.SimpleImmutableEntry<String, Integer>> arr = new ArrayList<>();
 
-    // 정렬
+    // add
+    arr.add(new AbstractMap.SimpleImmutableEntry<>(i, num[i]));
+
+    // sort
     Collections.sort(arr, new Comparator<AbstractMap.SimpleImmutableEntry<String, Integer>>() {
         @Override
         public int compare(AbstractMap.SimpleImmutableEntry<String, Integer> o1, AbstractMap.SimpleImmutableEntry<String, Integer> o2) {
