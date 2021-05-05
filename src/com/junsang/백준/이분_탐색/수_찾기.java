@@ -65,7 +65,7 @@ public class 수_찾기 {
             }
 
             // 수를 못찾을 경우
-            else if (num < arr[mid]) right = mid - 1;
+            else if (arr[mid] > num) right = mid - 1;
             else left = mid + 1;
         }
 
