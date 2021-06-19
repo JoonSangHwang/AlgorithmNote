@@ -15,7 +15,7 @@ public class _2_First {
 
     public static void main(String[] args) {
 
-        solution();
+        solution("");
     }
 
     public static int solution(String S) {
